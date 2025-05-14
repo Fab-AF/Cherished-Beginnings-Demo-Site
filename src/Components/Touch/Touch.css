@@ -1,0 +1,141 @@
+.touchcontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fff0e7;
+}
+.toptouch {
+  display: flex;
+}
+
+.toplefttouch {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.5rem;
+  padding: 0rem 6rem;
+}
+.touchtitle {
+  font-family: Inter;
+  font-size: 33px;
+  font-weight: 600;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.touchdesc {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.touchbutton {
+  padding: 0.6rem 1.6rem;
+    background-color: var(--primary);
+    border: 1px solid var(--primary);
+    border-radius: 0.5rem;
+    color: var(--white);
+}
+.touchbutton>img{
+  color: transparent;
+  width: 25px;
+  margin-left: 0.5rem;
+}
+.touchbutton:hover {
+  background-color: transparent;
+    border: 1px solid var(--primary);
+    color: var(--primary);
+    transition: all 0.5s ease-in-out;cursor: pointer;
+}
+.touchbutontext {
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 35px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.torighttouch {
+  width: 50%;
+}
+.bottomtouch {
+  display: flex;
+}
+.edu,
+.health {
+  background-color: transparent;
+    padding: 0.2rem 1rem;
+    border-radius: 1rem;
+    color: var(--primary);
+    border: 1px solid var(--primary);
+}
+.bbottom {
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.ehseting {
+  display: flex;
+  justify-content: flex-end;
+  /* align-items: center; */
+  flex-direction: column;
+  gap: 1rem;
+}
+@media (max-width: 768px) {
+  .toptouch {
+    flex-direction: column;
+  }
+  .toplefttouch {
+    width: 90%;
+    gap: 1.5rem;
+    padding: 0rem 0rem;
+    margin: auto;
+    padding: 2rem 0rem;
+  }
+  .torighttouch {
+    width: 100%;
+    margin: auto;
+    gap: 1rem;
+    padding: 0rem 1.2rem;
+  }
+  .touchtitle {
+    font-family: Inter;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 35px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  .bottomtouch {
+    flex-direction: column;
+    padding: 0rem 1.2rem;
+  }
+  .edu,
+  .health {
+    padding: 0.2rem 0.7rem;
+    font-size: 12px;
+  }
+  .bbottom {
+    font-size: 16px;
+    letter-spacing: -1px;
+  }
+  .bottomtouch > .btimageset {
+    width: 100% !important;
+  }
+  .btimageset > .ehseting {
+    padding: 0 !important;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .ehsetting > .bbottom {
+    font-size: 19px !important;
+  }
+}

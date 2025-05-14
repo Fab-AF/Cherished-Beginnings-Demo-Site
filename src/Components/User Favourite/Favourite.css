@@ -1,0 +1,154 @@
+.mainlistright {
+  padding: 1rem 8rem;
+}
+.listcardcontainer {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 1rem;
+  border-radius: 1rem;
+  width: 100%;
+}
+.caardusername {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 26.62px;
+  text-align: left;
+}
+.favouriteicon {
+  width: 36px;
+  aspect-ratio: 1 / 1;
+  cursor: pointer;
+  height: auto;
+
+}
+.list-amount {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 40px;
+  text-align: left;
+  color: var(--primary);
+}
+.list-perhour {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
+  color: var(--gray);
+}
+.doulaprofileimg {
+  width: 150px;
+height: 150px;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+.listcardcontainer>div:first-child {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.listcontainer{
+  align-items: center;
+  padding: 0 0.1rem;
+}
+.carduserlocation {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.36px;
+  text-align: left;
+  color: #42526b;
+}
+.nannydesc {
+  font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    color: #42526b;
+    
+    font-family: Inter;
+    font-size: 14px;
+    /* font-weight: 400; */
+    line-height: 24px;
+    text-align: left;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    word-wrap: break-word;
+    word-break: break-all;
+    hyphens: auto;
+}
+.listlast .list-amount {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 45.95px;
+  text-align: left;
+  color: var(--primary);
+}
+.listlast{
+  justify-content: space-between;
+  height: 100%;
+}
+.listlast .list-perhour {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27.57px;
+  text-align: left;
+  color: var(--gray);
+}
+.contactbutton {
+  padding: 0.4rem 1.8rem;
+  outline: none;
+  border: 1px solid var(--primary);
+  border-radius: 2.5rem !important;
+  background-color: var(--primary);
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: left;
+  transition: all 0.3s ease-in-out;
+}
+.contactbutton:hover {
+  border: 1px solid var(--primary);
+  background-color: transparent;
+  color: var(--primary);
+}
+@media (max-width: 900px) {
+  .mainlistright {
+    padding: 1rem 1rem;
+  }
+  .listingnavtwo {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .listingnavtwo input {
+    width: 100%;
+  }
+  .listleft {
+    width: 90%;
+  }
+  .listright {
+    flex-direction: column;
+    gap: 1rem !important;
+  }
+  .mainlistviewcontainer {
+    padding: 1rem 1rem;
+    flex-direction: column;
+  }
+  .mainlistleft {
+    width: 100%;
+  }
+  .listcardcontainer {
+    flex-direction: column;
+  }
+  .listcardcontainer > img {
+    width: 100%;
+  }
+  .filtertitle {
+    width: 100%;
+  }
+  .listlast {
+    flex-direction: row !important;
+    gap: 1rem !important;
+    align-items: center !important;
+    justify-content: space-between;
+  }
+}

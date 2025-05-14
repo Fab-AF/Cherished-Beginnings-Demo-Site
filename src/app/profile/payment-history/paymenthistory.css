@@ -1,0 +1,189 @@
+.paymenthistoryountcontainer {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 1rem;
+  margin: 0rem auto;
+  padding: 1rem 2rem 2rem 2rem;
+  overflow-x: auto; /* Add horizontal scrolling for small screens */
+}
+.paymenthistoryountcontainer > div > div:first-child {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: left;
+  margin-bottom: 0rem;
+}
+.paymenthistoryountcontainer > div > div:nth-child(2) {
+  cursor: pointer;
+  color: var(--primary);
+  text-transform: capitalize;
+}
+table thead tr th {
+  border-top: 1px solid #6e767e;
+  border-bottom: 1px solid #6e767e;
+  padding: 0.8rem 0rem;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24.2px;
+  text-align: left;
+  color: #6e767e;
+}
+table tbody tr td {
+  padding: 0.8rem 0rem;
+}
+/* table tbody tr td:first-child {
+  color: var(--primary);
+} */
+table tbody tr {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 29px;
+  text-align: left;
+}
+.savecardmodalbody {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.savecardmodalbody label {
+  cursor: pointer;
+}
+.addcardtitle {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: center;
+}
+.creditinputradotitle {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 16px;
+  text-align: left;
+  color: var(--primary);
+}
+.creditinputradodesc {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: left;
+}
+.creditinputbox input {
+  background-color: #f8f8f8;
+  border: none;
+  outline: none;
+  border-radius: 0.5rem;
+  padding: 0.7rem;
+  width: 100%;
+}
+.creditinputbox img {
+  position: absolute;
+  right: 3%;
+  top: 25%;
+}
+.paymentsecuredesc {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: center;
+  color: #585858;
+}
+.addcardbutton {
+  padding: 0.5rem 2rem;
+  outline: none;
+  border: 1px solid var(--primary);
+  border-radius: 0.5rem;
+  background-color: var(--primary);
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+.addcardbutton:hover {
+  border: 1px solid var(--primary);
+  background-color: transparent;
+  color: var(--primary);
+}
+.accinputbox {
+  padding: 0.4rem;
+  border: 1px solid gray;
+  outline: none;
+  border-radius: 0.5rem;
+  /* width: 100%; change 80for resolve bug */
+  width: 80%;
+  flex: 1.5;
+}
+.accinputboxaddress {
+  padding: 0.4rem 0.4rem 4rem 0.4rem;
+  border: 1px solid gray;
+  outline: none;
+  border-radius: 0.5rem;
+  width: 100%;
+  flex: 1.5;
+}
+.accinputboxphoto {
+  padding: 0.4rem;
+  outline: none;
+  width: 80%;
+  flex: 3;
+  display: flex;
+  align-items: center;
+
+  gap: 1rem;
+}
+.acclabel {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26.63px;
+  text-align: left;
+  color: #42526b;
+  flex: 0.6;
+}
+.custommodalwidth > div {
+  max-width: 600px !important;
+}
+.acccinputboxcont {
+  display: flex;
+  align-items: center;
+  gap: 0rem;
+  justify-content: space-between;
+  /* display: grid;
+  grid-template-columns: 180px auto; */
+}
+@media (max-width: 900px) {
+  .paymenthistoryountscreenrigtsection {
+    width: 100%;
+  }
+  table {
+    white-space: nowrap;
+  }
+  table thead tr th {
+    text-align: center;
+  }
+  table tbody tr td {
+    padding: 0.8rem 0rem;
+    text-align: center;
+  }
+  .paymenthistoryountcontainer > div > div:first-child {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+    margin-bottom: 0rem;
+  }
+  .acccinputboxcont {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: flex-start;
+    gap: 0rem;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .accinputbox,
+  .accinputboxaddress {
+    width: 100%;
+  }
+  .savecardmodalbody {
+    gap: 1rem;
+  }
+}

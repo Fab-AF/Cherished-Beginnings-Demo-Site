@@ -1,0 +1,294 @@
+a {
+  text-decoration: none;
+  color: black;
+}
+.myrequestdetailcontainer {
+  padding: 1rem 10rem;
+}
+.doulaprofileimage {
+  width: 120px;
+  height: 120px;
+  border-radius: 1rem;
+}
+.listviewprofile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #e6e6e6;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+.reqlistusername {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 38.73px;
+  text-align: left;
+}
+.reqlistexp {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26.63px;
+  text-align: left;
+}
+.reqlistrev {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25.01px;
+  text-align: left;
+}
+.reqlistprice > div:first-child {
+  font-size: 34px;
+  font-weight: 600;
+  line-height: 48.41px;
+  text-align: left;
+  color: var(--primary);
+}
+.reqlistprice > span {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 33.89px;
+  text-align: left;
+}
+.chattername {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 31.47px;
+  text-align: left;
+}
+.reqlistchatcontainer > div:first-child {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+}
+.reqlistchatcontainer {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  padding: 1.5rem;
+  border-radius: 1.5rem;
+  margin-top: 1rem;
+  max-height: 17rem;
+  overflow-y: scroll;
+}
+.chattercont {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 400px;
+}
+.chatbox {
+  padding: 1rem 1rem 5rem 1rem;
+  border: 1px solid #e6e6e6;
+  border-radius: 1rem;
+}
+.chayshadowcont {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  padding: 1.5rem;
+  border-radius: 1.5rem;
+  margin-top: 1rem;
+}
+
+@media (max-width: 1200px) {
+  .myrequestdetailcontainer {
+    padding: 1rem 1rem;
+  }
+
+  .chattercont {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 140px;
+  }
+}
+@media (max-width: 600px) {
+  .listviewprofile {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .listviewprofile > div:first-child {
+    flex-direction: column;
+  }
+  .listviewprofile > div:last-child {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .doulaprofileimage {
+    width: 120px;
+    height: auto;
+    border-radius: 1rem;
+  }
+}
+
+.chatcontainer {
+  width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
+  display: flex;
+}
+
+.leftchatsidebar {
+  width: 35%;
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.rightchatsidebar {
+  width: 65%;
+  height: calc(100vh - 89.6px);
+  overflow-y: scroll;
+}
+.lefttopbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1rem;
+  border: 1px solid #c7c7c7;
+  border-bottom: none;
+}
+.lefttopbar > div {
+  font-weight: 600;
+}
+.lefttopbar svg {
+  width: 5%;
+}
+.lefttopbar > input {
+  width: 100%;
+  border: 1px solid #c7c7c7;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  outline: none;
+}
+.chatcardlist {
+  padding: 1rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: space-between;
+  border: 1px solid #c7c7c7;
+  cursor: pointer;
+}
+
+.chatlistright > div > div:first-child {
+  font-size: 16px;
+  font-weight: 600;
+}
+.chatlistright > div > div:last-child {
+  font-size: 14px;
+  color: gray;
+}
+.chatlistright > div:last-child {
+  font-size: 14px;
+  color: gray;
+}
+input[type="radio"] {
+  display: none;
+}
+input[type="radio"]:checked + .chatcardlist {
+  background-color: var(--secondary);
+}
+.toprightbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border: 1px solid #c7c7c7;
+  border-left: none;
+}
+.toprightbarleftprofile {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.booknowbutton {
+  padding: 0.5rem 2rem;
+  outline: none;
+  border: 1px solid var(--primary);
+  border-radius: 5rem;
+  background-color: var(--primary);
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: left;
+  transition: all 0.3s ease-in-out;
+  height: max-content;
+}
+.toprightbarleftprofile > div > div:first-child {
+  font-size: 16px;
+  font-weight: 600;
+}
+.toprightbarleftprofile > div > div:last-child {
+  font-size: 14px;
+  color: gray;
+}
+.topchattime {
+  font-size: 14px;
+  color: gray;
+  text-align: center;
+  padding: 1rem;
+}
+
+.chatbox {
+  padding: 1rem;
+  width: 100%;
+}
+.chatbox > div:first-child {
+}
+.chatcontainermessage .chatbox:nth-child(odd) > div:first-child {
+  background-color: #c7c7c7;
+  width: 40%;
+  border-top-left-radius: 5rem;
+  border-top-right-radius: 5rem;
+  border-bottom-right-radius: 5rem;
+  border-bottom-left-radius: 0rem;
+  padding: 1rem 2rem;
+}
+
+.chatcontainermessage .chatbox:nth-child(even) > div:first-child {
+  background-color: var(--secondary);
+  width: 40%;
+  border-top-left-radius: 5rem;
+  border-top-right-radius: 5rem;
+  border-bottom-right-radius: 0rem;
+  border-bottom-left-radius: 5rem;
+  padding: 1rem 2rem;
+}
+.chatcontainermessage > div.chatbox:nth-child(even) {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+}
+.sendcontainer {
+  padding: 1rem;
+  position: relative;
+}
+.sendcontainer > input {
+  width: 100%;
+  padding: 1.5rem;
+  border-radius: 4rem;
+  border: none;
+  background-color: #ffefd59e;
+  outline: none;
+}
+.sendmsg {
+  background-color: white;
+  padding: 0.6rem;
+  border-radius: 3rem;
+  width: 4%;
+  height: 40%;
+  position: absolute;
+  right: 10%;
+  top: 30%;
+}
+.attachment {
+  background-color: white;
+  padding: 0.6rem;
+  border-radius: 3rem;
+  width: 4%;
+  height: 40%;
+  position: absolute;
+  right: 4%;
+  top: 30%;
+}

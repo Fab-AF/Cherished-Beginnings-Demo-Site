@@ -1,0 +1,75 @@
+.findpage {
+  background-color: #fff0e7;
+  /* margin-top: 2rem; */
+}
+.findleft {
+  padding-left: 9rem;
+}
+.findlefttitle {
+  font-family: Inter;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 60px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.finddesc {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.bs {
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 40px;
+  letter-spacing: 0em;
+  text-align: left;
+  cursor: pointer;
+}
+.browserimage>img{
+  color: transparent;
+  width: 25px;
+  margin-left: 0.5rem;
+}
+.browserimage {
+  padding: 0.6rem 1.6rem;
+    background-color: var(--primary);
+    border: 1px solid var(--primary);
+    border-radius: 0.5rem;
+    color: var(--white);
+}
+.browserimage:hover {
+  background-color: transparent;
+    border: 1px solid var(--primary);
+    color: var(--primary);
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+.findimage {
+  max-width: 48%;
+  height: 450px;
+}
+.arrowimage {
+  max-width: 15%;
+}
+
+@media (max-width: 768px) {
+  .findimage {
+    display: none;
+  }
+  .findleft {
+    width: 90%;
+    margin: 1rem auto;
+    padding: 2rem 0rem;
+  }
+  .bgimagenear {
+    padding: 3rem 0rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+  }
+}

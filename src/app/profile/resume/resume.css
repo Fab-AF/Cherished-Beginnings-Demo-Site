@@ -1,0 +1,190 @@
+.doularesumeformcontainer {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 1rem;
+  margin: 0rem auto;
+  padding: 1rem 2rem 2rem 2rem;
+  width: 100%;
+  overflow-x: auto; /* Add horizontal scrolling for small screens */
+}
+.doularesumeformcontainerdoula {
+  /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+  border-radius: 1rem;
+  margin: 0rem auto;
+  padding: 1rem 2rem 2rem 2rem;
+  width: 100%;
+  overflow-x: auto; /* Add horizontal scrolling for small screens */
+}
+
+.doularesumeformcontainerdoula > div:first-child {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: left;
+  margin-bottom: 1rem;
+}
+.doularesumeformcontainer > div:first-child {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: left;
+  margin-bottom: 1rem;
+}
+.inputflex {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.accformcontainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.accinputbox {
+  padding: 0.4rem;
+  border: 1px solid gray;
+  outline: none;
+  border-radius: 0.5rem;
+  /* width: 100%; change 80 */
+  width: 80%;
+  flex: 3;
+}
+.accinputboxphoto {
+  padding: 0.4rem;
+  outline: none;
+  width: 80%;
+  flex: 3;
+  display: flex;
+  align-items: center;
+  gap: 0rem;
+}
+.accinputboxphotogap {
+  gap: 1rem !important;
+  font-size: 14px;
+}
+.inputerrorparent {
+  flex: 3;
+}
+.closeicon {
+  position: absolute;
+  right: -20px;
+  top: 5px;
+}
+.acclabel {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26.63px;
+  text-align: left;
+  color: #42526b;
+  flex: 1.5 2;
+}
+.w-80 {
+  width: 80% !important;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.exceptiongrid {
+  display: grid;
+  grid-template-columns: 180px auto;
+}
+.acccinputboxcontresume {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  width: 100%;
+  flex: 3 1;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.flex-3 {
+  flex: 3;
+}
+.defaultidproof {
+  width: 20%;
+  height: auto;
+}
+.addmorebutton {
+  background: none;
+  color: var(--primary);
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  width: fit-content;
+}
+.descriptionacccinputboxcont {
+  padding: 0.4rem 0.4rem 5rem 0.4rem;
+}
+.customcolumn {
+  flex: 3 1;
+}
+.customcolumn > input {
+  width: 100%;
+}
+.customguideline {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21.78px;
+  text-align: left;
+  color: var(--primary);
+  margin-top: 0.5rem;
+}
+
+.acccinputboxcontresume select {
+  flex: 3 1;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  outline: none;
+}
+.savesettingbtn {
+  background-color: var(--primary);
+  color: white;
+  border: 1px solid var(--primary);
+  padding: 0.5rem 0.5rem;
+  outline: none;
+  border-radius: 0.5rem;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: left;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+}
+.documentparentclass {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.savesettingbtn:hover {
+  border: 1px solid var(--primary);
+  background-color: transparent;
+  color: var(--primary);
+}
+.alltitle {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 25px;
+  text-align: left;
+}
+@media (max-width: 900px) {
+  .w-80 {
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .inputerrorparent {
+    flex: 3 1;
+    width: 100%;
+  }
+  .customyearwidth {
+    width: 100% !important;
+  }
+  .accinputboxphoto {
+    padding: 0.4rem;
+    outline: none;
+    width: 100%;
+    /* flex: 3 1; */
+    display: flex;
+    align-items: center;
+    gap: 0rem;
+  }
+}

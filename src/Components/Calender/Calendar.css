@@ -1,0 +1,37 @@
+h5 {
+    margin: 0;
+}
+
+.time-slot {
+    padding: 10px 0;
+    margin: 2px 0;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    color: #6c757d;
+}
+
+.time-slot.active {
+    background-color: #8d5d45;
+    color: white;
+    font-weight: bold;
+}
+
+.btn-light {
+    background-color: #f2f2f2;
+    border: none;
+}
+
+.btn-primary {
+    background-color: #8d5d45;
+    border: none;
+}
+
+.btn-outline-primary {
+    border-color: #8d5d45;
+    color: #8d5d45;
+}
+
+.btn-outline-primary:hover {
+    background-color: #8d5d45;
+    color: white;
+}

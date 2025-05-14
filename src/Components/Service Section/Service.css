@@ -1,0 +1,93 @@
+/* service */
+#page2 {
+  padding: 3.5rem 0rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.servicecontainer{
+  background-color: #fff0e7;
+
+}
+.wedoittitle {
+  font-family: inter;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 0px;
+  letter-spacing: 0em;
+  text-align: left;
+  position: relative;
+  margin: 0rem auto;
+  margin-top: 0%;
+  width: fit-content;
+}
+.servicecard {
+  background-color: white;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  gap: 0.8rem;
+  border-radius: 1rem;
+  width: 40%;
+  border: 1px solid transparent;
+}
+
+.iconbg {
+  background-color: #a4a58c;
+  width: -moz-fit-content;
+  width: 50px;
+  padding: 0.6rem;
+  border-radius: 0.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* aspect-ratio: 1 / 1; */
+  height: 50px;
+}
+.servicecard>div:first-child{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.iconbg:hover {
+  background-color: var(--primary);
+  transition: all 0.5s ease-in-out;
+}
+.iconbg > img {
+  max-width: 80%;
+}
+.servicecardtitle {
+  font-family: Inter;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 28px;
+  text-align: left;
+}
+.servicecarddesc {
+  color: var(--gray);
+  text-align: left;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+  text-align: left;
+
+}
+@media (max-width: 768px) {
+  #page2 {
+    gap: 2rem;
+  }
+  .wedoittitle {
+    text-align: center;
+    /* margin-top: 115%; */
+  }
+  .servicecard {
+    width: 90%;
+    margin: auto;
+  }
+  .abovecards,
+  .belowcards {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,92 @@
+.dayflex{
+width: 100px;}
+.rowcontainer{
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1rem;
+}
+.reqlistingcontainer {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    border-radius: 1rem;
+    width: fit-content;
+    margin: 2rem auto;
+    padding: 1rem 2rem 2rem 2rem;
+    overflow-x: auto;
+}
+.selecttime{
+font-size: 16px;
+font-weight: 500;
+line-height: 38px;
+text-align: left;
+}
+.saveavailibility{
+    display: grid;
+    grid-template-columns: 163px 62%;
+}
+.reqlistingcontainer > div:first-child {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+.rowcontainer select{
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    outline: none;
+}
+.rowcontainer .d-flex{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+    line-height: 20px;
+}
+.addcalandercontainer{
+    display: grid;
+    grid-template-columns: 1fr auto;
+    justify-content: end;
+    align-items: center;
+    justify-items: stretch;
+    grid-column-gap: 2rem;
+    grid-row-gap: 1rem;
+}
+.closeiconspecial {
+    position: absolute;
+    right: -25px;
+    top: 5px;
+
+}
+.closeiconspecial>img {
+    width: 18px;
+    height: auto;
+    cursor: pointer;
+}
+@media (max-width:900px) {
+    .reqlistingcontainer {
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        border-radius: 1rem;
+        width: 95%;
+        margin: 2rem auto;
+        padding: 2rem;
+        overflow-x: auto;
+        padding: 1rem;
+    }
+    .dayflex {
+        width: fit-content;
+    }
+    .rowcontainer {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        padding: 1rem;
+        flex-wrap: wrap;}
+        .rowcontainer .d-flex{
+            gap: 0.5rem;
+        }
+        .saveavailibility {
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+}

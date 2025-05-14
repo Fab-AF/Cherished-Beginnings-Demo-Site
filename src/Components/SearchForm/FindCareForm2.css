@@ -1,0 +1,204 @@
+.form2header {
+  background-color: var(--white);
+  padding: 1rem;
+  text-align: center;
+}
+.form2class {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 90%;
+}
+.inputwidthset {
+  width: 48%;
+}
+.form2header > img {
+  width: 10vw;
+  mix-blend-mode: difference;
+}
+.form2main {
+  /* height: calc(100vh - 88px); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem 0rem;
+}
+.yesnowidth {
+  width: 45%;
+  cursor: pointer;
+}
+.form1title {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.formcontainer1 {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  width: 100%;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 500;
+}
+.servicesf2 > .service1 > img {
+  max-width: 8%;
+}
+.service1 {
+  border: 1px solid #c5c5c4;
+  border-radius: 0.8rem;
+  padding: 0.7rem 0.8rem;
+  cursor: pointer;
+}
+.forminoutset {
+  outline: none !important;
+  border: 1px solid #c5c5c4;
+  border-radius: 0.8rem;
+  width: 100%;
+}
+.calandericon {
+  position: absolute;
+  left: 90%;
+  top: 25%;
+}
+.f1zip {
+  padding-left: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-right: 14rem;
+  border: 1px solid #c5c5c4;
+  border-radius: 0.5rem;
+  outline: none;
+  width: 100%;
+}
+.f2zip {
+  padding-left: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  /* padding-right: 14rem; */
+  border: 1px solid #c5c5c4;
+  border-radius: 0.5rem;
+  outline: none;
+  width: 100%;
+}
+.inpputwiedthform2 {
+  width: 48%;
+}
+.nextbutton {
+  background-color: #9e5b34;
+  border: none;
+  border-radius: 0.5rem;
+  opacity: 0.9;
+  width: 90%;
+  padding: 0.6rem;
+}
+.vacation {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.nextbutton:hover {
+  background-color: #9e5b34;
+  border: none;
+  border-radius: 0.5rem;
+  opacity: 1;
+  transition: all 0.5s ease-in-out;
+}
+.nextbutton > div {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--white);
+}
+
+.nextbutton > img {
+  max-width: 6%;
+}
+.expect {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.9rem 1rem;
+  gap: 0.3rem;
+  border-radius: 2rem;
+  border: 1px solid #c5c5c4;
+}
+.addanother {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--primary);
+  cursor: pointer;
+}
+.radioset {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: none;
+}
+.rounded1 {
+  border: 1px solid #c5c5c4;
+  border-radius: 2rem;
+  width: 45%;
+}
+.pl {
+  padding-left: 0;
+}
+input[type="radio"] {
+  background-color: #eaebeb;
+}
+input[type="radio"]:checked {
+  background-color: var(--primary);
+}
+@media (max-width: 768px) {
+  .form2header {
+    padding: 1rem;
+  }
+  .f1zip {
+    padding-right: 8rem;
+  }
+  .formcontainer1 {
+    width: 80%;
+  }
+  .form1title {
+    font-size: 22px;
+  }
+  .calandericon {
+    display: none;
+  }
+  .form1width {
+    width: 80% !important;
+  }
+  .formcontainer1 {
+    margin: auto;
+  }
+  .optionmobile {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .f2zip {
+    padding-right: 1rem;
+  }
+  .nextbutton {
+    width: 80%;
+  }
+}

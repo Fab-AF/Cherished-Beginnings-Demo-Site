@@ -1,0 +1,17 @@
+.alertnocaregivers {
+  background-color: var(--secondary);
+  margin-top: 1rem;
+  padding: 1rem;
+}
+
+.nocareimg > img {
+  width: 25%;
+  height: 80vh;
+}
+@media (max-width: 900px) {
+  .nocareimg > img {
+    width: 80%;
+    padding: 2rem;
+    height: auto;
+  }
+}

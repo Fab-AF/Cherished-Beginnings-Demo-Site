@@ -1,0 +1,126 @@
+.mycontractviewcontainer {
+  padding: 1rem 8rem;
+  width: 75%;
+  margin: auto;
+}
+.containershadow {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  border-radius: 1rem;
+}
+.containershadow hr{
+margin: 0.5rem auto !important;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.breadcrumb>li>a{
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: left;
+  color: var(--graytext);
+}
+.breadcrumb>.active>a{
+ color: var(--primary);
+}
+
+.listviewprofile {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  /* border: 1px solid #e6e6e6; */
+  padding: 1rem;
+  border-radius: 1rem;
+}
+.reqlistusername {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 25px;
+  text-align: left;
+}
+.reqlistexp {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26.63px;
+  text-align: left;
+}
+.reqlistrev {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 25.01px;
+  text-align: center;
+  gap: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+.reqlistprice > div:first-child {
+  font-size: 34px;
+  font-weight: 600;
+  line-height: 48.41px;
+  text-align: left;
+  color: var(--primary);
+}
+.reqlistprice > span {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 33.89px;
+  text-align: left;
+}
+.threedot {
+  border: 1px solid var(--primary);
+  padding: 0.1rem 1.5rem;
+  border-radius: 2rem;
+  color: var(--primary);
+}
+.contractinfotitle {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 36.31px;
+  text-align: left;
+}
+.startdate {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 31.47px;
+  text-align: left;
+  color: var(--gray);
+}
+.customizecolgrid{
+display: grid !important;
+grid-template-columns: 220px 1fr;
+}
+.datecontent {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 25px;
+  text-align: left;
+}
+.contractinfocontainer {
+  padding: 0.5rem 2rem;
+}
+@media (max-width: 768px) {
+  .mycontractviewcontainer {
+    padding: 1rem 1rem;
+    width: 100%;
+  }
+  .listviewprofile {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  .listviewprofile>div{
+    flex-direction: column;
+    align-items: flex-start !important;
+    width: 100%;
+  }
+  .customizecolgrid{
+    display: grid !important;
+    grid-template-columns: 1fr;
+    }
+    .threedot{
+      width: fit-content !important;
+    }
+}

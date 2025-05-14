@@ -1,0 +1,7 @@
+form > div > input[type="checkbox"] {
+  padding: 0.8rem;
+  outline: none;
+  border-radius: 0.6rem;
+  border: 1px solid gray;
+  width: fit-content;
+}

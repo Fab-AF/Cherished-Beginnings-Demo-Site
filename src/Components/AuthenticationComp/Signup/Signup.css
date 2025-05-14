@@ -1,0 +1,131 @@
+.signupcontainer {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.signupbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  /* box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; */
+  padding: 1rem;
+  gap: 1rem;
+  border-radius: 1rem;
+}
+.signuptitle {
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 35px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.signupbox > div:nth-child(2) {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+}
+.buttons > label {
+  padding: 0.5rem 2rem;
+  border: none;
+  border-radius: 0.6rem;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+  width: 38%;
+}
+.signupbox > img {
+  width: 85%;
+}
+.googlesignup {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.googlesignup > img {
+  width: 85%;
+  margin: auto;
+  cursor: pointer;
+}
+form > div > input {
+  padding: 0.8rem;
+  outline: none;
+  border-radius: 0.6rem;
+  border: 1px solid gray;
+  width: 100%;
+}
+form button {
+  padding: 0.8rem;
+  outline: none;
+  border-radius: 0.6rem;
+  border: 1px solid gray;
+  width: 100%;
+  background-color: var(--primary);
+  color: var(--white);
+  transition: all 0.3s ease-in-out;
+}
+form button:hover {
+  background-color: var(--white);
+  color: var(--primary);
+}
+.signupbox > p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+  width: 75%;
+}
+.signupbox a {
+  color: var(--primary);
+}
+
+/*input box toggle color logic */
+.signupformlabel label {
+  cursor: pointer;
+  border: 1px solid var(--primary);
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  width: 8vw;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+.signupformlabel label:hover {
+  background-color: var(--primary);
+  border: 1px solid var(--primary);
+  color: white;
+}
+.signupactive {
+  background-color: var(--primary);
+  border: 1px solid var(--primary);
+  color: white;
+}
+.signupformlabel input[type="radio"] {
+  display: none;
+}
+/*input box toggle color logic */
+@media (max-width: 1200px) {
+  .signupformlabel label {
+    min-width: 100px;
+  }
+  .googlesignup > img {
+    height: auto;
+  }
+  .googlesignup {
+    gap: 1rem;
+  }
+  .signuptitle {
+    font-size: 30px;
+  }
+}

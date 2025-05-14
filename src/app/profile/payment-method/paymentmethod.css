@@ -1,0 +1,211 @@
+.paymentountcontainer {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 1rem;
+  margin: 0rem auto;
+  padding: 1rem 2rem 2rem 2rem;
+  overflow-x: auto; /* Add horizontal scrolling for small screens */
+}
+.modal-dialog {
+  /* max-width: 550px; */
+  margin-right: auto;
+  margin-left: auto;
+}
+.paymentountcontainer > div:first-child {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: left;
+  margin-bottom: 1rem;
+}
+.custommodalwidth > div {
+  max-width: 550px;
+}
+.addcard {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 31.47px;
+  text-align: left;
+  color: var(--primary);
+}
+.addcarddesc {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 30px;
+  text-align: left;
+  color: var(--graytext);
+}
+.savesettingbtn {
+  background-color: var(--primary);
+  color: white;
+  border: 1px solid var(--primary);
+  padding: 0.5rem 0.5rem;
+  outline: none;
+  border-radius: 0.5rem;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: left;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+}
+.savesettingbtn:hover {
+  border: 1px solid var(--primary);
+  background-color: transparent;
+  color: var(--primary);
+}
+.dltbutton {
+  border: 1px solid red;
+  background-color: transparent;
+  color: red;
+  padding: 0.5rem 2rem;
+  outline: none;
+  border-radius: 0.5rem;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: left;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+}
+.dltbutton:hover {
+  background-color: red;
+  color: white;
+  border: 1px solid red;
+}
+
+/* modal ui */
+.savecardmodalbody {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.savecardmodalbody label {
+  cursor: pointer;
+}
+.addcardtitle {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: center;
+}
+.creditinputradotitle {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 16px;
+  text-align: left;
+  color: var(--primary);
+}
+.creditinputradodesc {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: left;
+}
+.creditinputbox input {
+  background-color: #f8f8f8;
+  border: none;
+  outline: none;
+  border-radius: 0.5rem;
+  padding: 0.7rem;
+  width: 100%;
+}
+.creditinputbox img {
+  position: absolute;
+  right: 3%;
+  top: 25%;
+}
+.paymentsecuredesc {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: center;
+  color: #585858;
+}
+.addcardbutton {
+  padding: 0.5rem 2rem;
+  outline: none;
+  border: 1px solid var(--primary);
+  border-radius: 0.5rem;
+  background-color: var(--primary);
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+.addcardbutton:hover {
+  border: 1px solid var(--primary);
+  background-color: transparent;
+  color: var(--primary);
+}
+.savecardparentdiv {
+  width: 45%;
+}
+.savecardcontainer {
+  width: 100%;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.active-savecardcontainer {
+  border: 1px solid #9e4b34;
+}
+.removecardtext {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21.78px;
+  text-align: center;
+  margin-top: 0.5rem;
+  cursor: pointer;
+}
+.addmorecardtext {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  text-align: left;
+  color: var(--primary);
+  margin-top: 1rem;
+  cursor: pointer;
+}
+.paymentbtngrp {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+@media (max-width: 900px) {
+  .paymentountscreenrigtsection {
+    width: 100%;
+  }
+  .paymentcinputboxcont {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  .paymentinputboxphoto {
+    flex-direction: column;
+    width: 100%;
+  }
+  .paymentinputbox {
+    width: 100%;
+  }
+  .paymentformcontainer {
+    gap: 1rem;
+  }
+  .paymentbtngrp {
+    display: grid !important;
+    grid-template-columns: 1fr;
+    margin-top: 1rem;
+  }
+  .creditinputradotitle {
+    font-size: 14px;
+  }
+  .creditinputradodesc {
+    font-size: 10px;
+  }
+  .savecardparentdiv {
+    width: 100%;
+  }
+}

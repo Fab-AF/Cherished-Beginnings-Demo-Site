@@ -1,0 +1,280 @@
+.hero {
+  position: relative;
+  text-align: center;
+
+}
+.herologout {
+  position: relative;
+  text-align: center;
+}
+/* Style for the hero image */
+.hero img {
+  width: 100vw;
+  height: auto;
+}
+.findbutton>img{
+  width: 25px;
+}
+/* Style for the hero text */
+.hero {
+  background-image: url("../../Assets/heroimg.svg");
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 3rem 2rem;
+}
+.herologout{
+  background-image: url("../../Assets/heroimg.svg");
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 3rem 2rem;
+}
+.herotext {
+  font-family: Inter;
+  font-size: 70px;
+  font-weight: 800;
+  line-height: 100px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin: 2rem auto;
+  width: 62%;
+  color: var(--white);
+}
+.poverty {
+  max-width: 35%;
+  position: relative;
+  left: -13%;
+  margin-top: -3rem;
+}
+.formcontainer {
+  background-color: white;
+  width: 65%;
+  height: 80%;
+  border-radius: 1rem;
+  margin: auto;
+  margin-top: 1.9rem;
+  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
+    rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+    padding: 1rem 2rem 2rem 2rem;
+  font-family: Inter;
+}
+.findbuttonparent{
+  width: 32%;
+  margin: 0rem auto;
+}
+.formtitle {
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 40px;
+  letter-spacing: -0.012em;
+  text-align: center;
+}
+.servicerow {
+  font-family: Inter;
+  font-size: 17px;
+  font-weight: 500 ;
+  line-height: 22px;
+  text-align: left;
+}
+.datepickerwidth {
+  width: 100%;
+  gap: 1rem;}
+.boardingdate{
+  display: grid !important;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.expecteddateparent{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.formparentfindcare{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.expecdaobparent{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+.radioservice {
+  justify-content: space-between;
+  font-size:15px;
+  /* flex-wrap: wrap; */
+  gap: 0.7rem;
+  text-wrap: nowrap;
+}
+input[type="radio"] {
+  background-color: #eaebeb;
+}
+input[type="radio"]:checked {
+  background-color: var(--primary);
+}
+.radioservice>.form-check {
+  border: 1px solid #e7e9ec;
+  border-radius: 2rem;
+  padding: 1rem auto;
+  padding-left: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+.hero.form-check>.form-check-labe {
+  cursor: pointer;
+}
+.forminoutset {
+  outline: none !important;
+  border: 1px solid #e7e9ec;
+  border-radius: 1rem;
+}
+.calandericon {
+  transform: translate(-40px, 0px);
+}
+.childsize1,
+.childsize2,
+.childsize3,
+.childsize4,
+.childsize5 {
+  border: 1px solid #e7e9ec;
+  padding: 1rem 2.5rem;
+  border-radius: 0.3rem;
+  font-family: var(--fontstyle);
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #435362;
+}
+.findbutton {
+  padding: 0rem 8rem;
+  background-color: var(--primary);
+  border: 1px solid var(--primary);
+  border-radius: 1rem;
+  color: var(--white);
+  height: 60px;
+}
+.findbutton:hover {
+  /* transform: scale(1.05);
+  background: linear-gradient(to right, var(--error), var(--warning));
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  transition: all 0.5s ease-in-out; */
+  background-color: transparent;
+  border: 1px solid var(--primary);
+  
+  color: var(--primary);
+}
+.find {
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 68px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.uparrow {
+  position: fixed;
+  bottom: 3%;
+  right: 3%;
+  z-index: 10;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  
+  .hero {
+    padding: 2rem 1rem;
+  }
+  .boardingdate {
+    display: grid !important;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+.expecdaobparent {
+  display: grid;
+  grid-template-columns: 1fr;}
+  .formtitle {
+    font-family: Inter;
+    font-size: 30px;
+    font-weight: 600;
+    /* line-height: 40px; */
+    letter-spacing: -0.012em;
+    text-align: center;
+    font-size: x-large;
+  }
+  .radioservice {
+    justify-content: space-between;
+    font-size: 0.9rem;
+    /* flex-wrap: wrap; */
+    gap: 1rem;
+    padding: 0 !important;
+    flex-direction: column;
+  }
+  .findbuttonparent {
+    width: 100%;
+    margin: 0rem auto;
+}
+.servicerow {
+  text-align: center;
+  font-size: 15px;
+  justify-content: flex-start;
+  display: flex;
+}
+  .boardingnear {
+    align-items: flex-start;
+    width: 100%;
+  }
+  #boardingnearInput {
+    width: 75vw;
+  }
+  .herotext {
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 0rem auto;
+    /* width: fit-content; */
+    width: 77%;
+    color: var(--white);
+  }
+  .poverty {
+    max-width: 50%;
+    position: relative;
+    left: -11%;
+    margin-top: 0rem;
+  }
+  .formcontainer {
+    background-color: white;
+    width: 100%;
+    height: max-content;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
+      rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+    padding: 2rem 2rem;
+    font-family: var(--fontstyle);
+  }
+  .findbutton {
+    padding: 0rem 7.5rem;
+    background-color: var(--primary);
+    border: 1px solid var(--primary);
+    border-radius: 1rem;
+    color: var(--white);
+    margin-top: 0.5rem;
+  }
+  .datepickerwidth {
+    width: 100%;
+  }
+  .calandericon {
+    display: none;
+  }
+}

@@ -1,0 +1,74 @@
+.reqlistingcontainer {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  border-radius: 1rem;
+  width: 80%;
+  margin: 2rem auto;
+  padding: 1rem 2rem 2rem 2rem;
+  overflow-x: auto; /* Add horizontal scrolling for small screens */
+}
+
+.reqlistingcontainer>div:first-child {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+.reqlistingcontainer table {
+  width: 100%;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+.reqlistingcontainer th,
+.reqlistingcontainer td {
+  padding: 0.5rem;
+  vertical-align: middle;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.reqlistingcontainer th {
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24.2px;
+  text-align: left;
+  color: var(--gray);
+  padding: 1rem 0.5rem;
+}
+
+.reqlistingcontainer td:last-child {
+  text-align: left;
+}
+.messagewidth {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 35rem;
+  padding-right: 5rem !important;
+
+}
+@media (max-width: 900px) {
+  .reqlistingcontainer {
+    width: 90%;
+    overflow-x: auto;
+  }
+
+  .reqlistingcontainer table {
+    width: auto;
+  }
+
+  .reqlistingcontainer th,
+  .reqlistingcontainer td {
+    white-space: nowrap; /* Prevent wrapping of table cells */
+  }
+  .messagewidth {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 8rem;
+  }
+}

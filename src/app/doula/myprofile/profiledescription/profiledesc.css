@@ -1,0 +1,147 @@
+.profiledescformcontainer {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 1rem;
+  margin: 0rem auto;
+  padding: 1rem 2rem 2rem 2rem;
+  width: 100%;
+  overflow-x: auto; /* Add horizontal scrolling for small screens */
+}
+
+.profiledescformcontainer > div:first-child {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: left;
+  margin-bottom: 1rem;
+}
+.inputflex {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.accformcontainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.accinputbox {
+  padding: 0.4rem;
+  border: 1px solid gray;
+  outline: none;
+  border-radius: 0.5rem;
+  width: 80%;
+  flex: 3;
+}
+.accinputboxphoto {
+  padding: 0.4rem;
+  outline: none;
+  width: 80%;
+  flex: 3;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.acclabel {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26.63px;
+  text-align: left;
+  color: #42526b;
+  flex: 1;
+}
+.acccinputboxcont {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  display: grid;
+  grid-template-columns: 180px auto;
+}
+.descriptionacccinputboxcont {
+  padding: 0.4rem 0.4rem 5rem 0.4rem;
+}
+.customcolumn {
+  flex: 3 1;
+  /* width: 80%; */
+}
+.customcolumn > input {
+  width: 100%;
+}
+.customguideline {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21.78px;
+  text-align: left;
+  color: var(--primary);
+  margin-top: 0.5rem;
+}
+
+.acccinputboxcont > select {
+  flex: 3 1;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  outline: none;
+  width: 80%;
+}
+.savesettingbtn {
+  border: 1px solid var(--primary);
+  background-color: transparent;
+  color: var(--primary);
+  padding: 0.5rem 0.5rem;
+  outline: none;
+  border-radius: 0.5rem;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: left;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+}
+.savesettingbtn:hover {
+  background-color: var(--primary);
+  color: white;
+  border: 1px solid var(--primary);
+}
+.dltbutton {
+  border: 1px solid red;
+  background-color: transparent;
+  color: red;
+  padding: 0.5rem 0.5rem;
+  outline: none;
+  border-radius: 0.5rem;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: left;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+}
+.dltbutton:hover {
+  background-color: red;
+  color: white;
+  border: 1px solid red;
+}
+@media (max-width: 900px) {
+  .accountscreenrigtsection {
+    width: 100%;
+  }
+  .acccinputboxcont {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    gap: 0rem;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .accinputboxphoto {
+    flex-direction: column;
+    width: 100%;
+  }
+  .accinputbox {
+    width: 100% !important;
+  }
+  .accformcontainer {
+    gap: 1rem;
+  }
+  .accbtngrp {
+    flex-direction: column;
+    margin-top: 2rem;
+  }
+}

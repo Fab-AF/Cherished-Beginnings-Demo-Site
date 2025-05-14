@@ -1,0 +1,120 @@
+
+.bgimagenear {
+  background-image: url("../../Assets/findnear.svg");
+  /* height: 75vh; */
+  background-position: center;
+  background-size: cover;
+  padding: 3rem 0rem;
+  gap: 2.5rem !important;
+}
+.nearcentertitle {
+  font-family: Inter;
+  font-size: 38px;
+  font-weight: 600;
+  line-height: 45px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: white;
+}
+.ziptext {
+  padding-left: 1rem;
+  padding-right: 2rem;
+  border: none;
+  border-radius: 0.6rem;
+  outline: none;
+}
+.findbutton3 {
+  padding: 1rem 4rem;
+  background-color: var(--primary);
+  border: 2px solid var(--white);
+  border-radius: 0.6rem;
+  color: var(--white);
+}
+.locationsparent>div:nth-child(1){
+  background-color: #FFEFDB
+  ;
+}
+.locationsparent>div:nth-child(2){
+  background-color: #FFE0EC
+  ;
+}
+.locationsparent>div:nth-child(3){
+  background-color: #E2FFE9
+  ;
+}
+.locationsparent>div:nth-child(4){
+  background-color: #FBF0FF
+;
+}
+.locationsparent>div:nth-child(5){
+  background-color: #E9FFF3
+  ;
+}
+.locationsparent>div:nth-child(6){
+  background-color: #EAEBFF
+  ;
+}
+.locationsparent>div:nth-child(7){
+  background-color: #FFE7E2
+  ;
+}
+.locations {
+  background-color: #ffeeda;
+  padding: 0.8rem 5rem 0.8rem 1rem;
+  border-radius: 0.5rem;
+  min-width: 22%;
+  min-height: 30%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.locationtext {
+  font-family: inter;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.announcement {
+  max-width: 30%;
+}
+
+@media (max-width: 768px) {
+  .nearcentertitle {
+    font-family: Inter;
+    font-size: 28px;
+    line-height: 20px;
+    
+  }
+  .locationsparent{
+    width: 100% !important;
+  }
+  .bgimagenear {
+    padding: 3rem 0rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    gap: 2rem !important;
+  }
+  .nearrow2 {
+    flex-direction: column;
+  }
+  .ziptext {
+    padding: 1rem 1rem;
+  }
+  .findlefttitle {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .locations {
+    background-color: #ffeeda;
+    padding: 0.8rem;
+    border-radius: 0.5rem;
+    min-height: 0%;
+    display: flex !important;
+    justify-content: flex-start !important;
+    align-items: center !important;
+    width: 45%;
+  }
+}

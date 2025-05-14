@@ -1,0 +1,321 @@
+.listingnavtwo {
+  background-color: var(--tertiary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  padding: 1rem 0rem;
+  box-shadow: 0px 5.333333492279053px 26.666667938232422px 0px #0000001a;
+}
+.listingnavtwo input {
+  padding: 0.7rem 1rem;
+  border: 1px solid var(--tertiary);
+  border-radius: 0.5rem;
+  outline: none;
+}
+.listleft > button {
+  position: absolute;
+  right: 3%;
+  top: 20%;
+  padding: 0.2rem 1rem;
+  border: 1px solid var(--primary);
+  background-color: transparent;
+  border-radius: 0.3rem;
+  font-size: 0.9rem;
+}
+.listrigh > label {
+  cursor: pointer;
+}
+.listright img {
+  max-width: 1.5rem;
+}
+.mainlistviewcontainer {
+  padding: 1rem 8rem;
+  display: flex;
+  gap: 2rem;
+}
+.mainlistleft {
+  /* position: sticky; */
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 25%;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.mainlistright {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  flex: 1;
+  overflow: auto;
+}
+.radioparrent {
+  border: 1px solid var(--tertiary);
+  padding: 0.4rem 0.6rem;
+  border-radius: 5rem;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: center;
+  color: var(--primary);
+  cursor: pointer;
+}
+.listcontainer {
+  align-items: center;
+  padding: 0 0.1rem;
+}
+.minmaxparent {
+  justify-content: space-between;
+}
+.filtertitle {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: left;
+  width: 100%;
+}
+input[type="date"] {
+  border: 1px solid #e6e6e6;
+  border-radius: 0.5rem;
+  padding: 0.6rem;
+  margin-top: 0.6rem;
+  width: 100%;
+}
+.mainlistright > div:first-child {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 24px;
+  color: var(--primary);
+}
+.listcardcontainer {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 1rem;
+  border-radius: 1rem;
+  width: 100%;
+}
+.listcardcontainer > div:first-child {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.listcardcontainer u {
+  color: var(--primary);
+  font-weight: 600;
+  cursor: pointer;
+}
+.doulaprofileimg {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+.nodoulafound {
+  height: auto;
+  width: 40%;
+}
+.caardusername {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 26.62px;
+  text-align: left;
+}
+.carduserlocation {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.36px;
+  text-align: left;
+  color: #42526b;
+}
+.nannydesc {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  color: #42526b;
+
+  font-family: Inter;
+  font-size: 14px;
+  /* font-weight: 400; */
+  line-height: 24px;
+  text-align: left;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  word-wrap: break-word;
+  word-break: break-all;
+  hyphens: auto;
+}
+.favouriteicon {
+  width: 36px;
+  aspect-ratio: 1/1;
+  cursor: pointer;
+  height: auto;
+}
+.contactbutton {
+  padding: 0.4rem 1.8rem;
+  outline: none;
+  border: 1px solid var(--primary);
+  border-radius: 2.5rem;
+  background-color: var(--primary);
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: left;
+  transition: all 0.3s ease-in-out;
+}
+.contactbutton:hover {
+  border: 1px solid var(--primary);
+  background-color: transparent;
+  color: var(--primary);
+}
+.list-amount {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 40px;
+  text-align: left;
+  color: var(--primary);
+}
+.list-perhour {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
+  color: var(--gray);
+}
+/* Optional styling */
+/* Listview.css */
+.listright > label > div {
+  padding: 0.5rem 1rem;
+}
+.listright > label > div {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+.clearallfilter {
+  background-color: transparent;
+  border: 1px solid var(--primary);
+  color: var(--primary);
+  padding: 0.2rem 1rem;
+  border-radius: 2.5rem;
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: center;
+}
+.clearallfilter:hover {
+  background-color: var(--primary);
+  border: 1px solid var(--primary);
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+.radio-label input[type="radio"] {
+  padding: 1rem;
+}
+.listlast {
+  justify-content: space-between;
+  height: 100%;
+}
+.listright input[type="radio"] {
+  display: none;
+}
+.radio-label input[type="radio"]:checked + div {
+  background-color: white;
+  border-radius: 0.5rem;
+  color: var(--primary);
+}
+/* Add this CSS to your stylesheet */
+input[type="radio"]:checked + div {
+  background-color: #fff0e7;
+  /* border: none; */
+  color: var(--primary); /* Change to desired color */
+}
+.mainlistleft input[type="radio"] {
+  display: none;
+}
+@media (max-width: 1200px) {
+  .listingnavtwo {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .listcardcontainer > div:first-child {
+    width: 100%;
+  }
+  .listingnavtwo input {
+    width: 100%;
+  }
+  .listleft {
+    width: 90%;
+  }
+  .listright {
+    flex-direction: row;
+    gap: 1rem !important;
+    flex-wrap: wrap;
+    display: grid !important;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .mainlistviewcontainer {
+    padding: 1rem 1rem;
+    flex-direction: column;
+  }
+  .mainlistleft {
+    width: 100%;
+  }
+  .listcardcontainer {
+    flex-direction: row;
+  }
+  .listcardcontainer > img {
+    width: 100%;
+  }
+  .filtertitle {
+    width: 100%;
+  }
+  .listlast {
+    flex-direction: column !important;
+    gap: 1rem !important;
+    align-items: center !important;
+    justify-content: space-between;
+  }
+}
+@media (max-width: 600px) {
+  .listright {
+    flex-direction: row;
+    grid-gap: 1rem !important;
+    gap: 1rem !important;
+    flex-wrap: wrap;
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
+    /* gap: 0rem !important; */
+    font-size: 12px;
+    justify-items: start;
+    gap: 0rem !important;
+  }
+  .listcardcontainer {
+    flex-direction: column;
+    gap: 0.3rem !important;
+  }
+
+  .listcardcontainer > div:first-child {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .listlast {
+    flex-direction: row-reverse !important;
+    gap: 1rem !important;
+    align-items: center !important;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .doulaprofileimg {
+    margin: 0 !important;
+  }
+}

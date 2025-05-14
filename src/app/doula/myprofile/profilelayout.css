@@ -1,0 +1,69 @@
+.usersettingpadding {
+  padding: 3rem 9rem;
+}
+.sidemenusec {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  width: 25% !important;
+  border-radius: 1rem;
+  height: fit-content;
+  overflow: hidden;
+}
+.doulasidemenu ul li {
+  margin-top: 0rem;
+}
+.usersettingpadding ul {
+  padding-left: 0rem;
+  margin-bottom: 0rem;
+}
+.sidemenusec li.active {
+  background-color: var(--secondary); /* Background color for active link */
+}
+
+.sidemenusec li.active span {
+  color: var(--primary); /* Color for active link text */
+}
+.usersettingpadding ul a div {
+  padding: 0.8rem 0rem 0.8rem 1rem;
+}
+.usersettingpadding li {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  text-align: left;
+}
+.usersettingpadding a {
+  text-decoration: none;
+  color: var(--gray);
+  font-weight: 500;
+}
+.accountscreenrigtsection {
+  width: 80%;
+}
+@media (max-width: 1200px) {
+  .usersettingpadding {
+    padding: 1rem 9rem;
+    flex-direction: column;
+    gap: 1rem !important;
+  }
+  .sidemenusec {
+    width: 100% !important;
+    position: relative;
+  }
+  .accountscreenrigtsection {
+    width: 100%;
+  }
+}
+@media (max-width: 900px) {
+  .usersettingpadding {
+    padding: 1rem 1rem;
+    flex-direction: column;
+    gap: 1rem !important;
+  }
+  .sidemenusec {
+    width: 100% !important;
+    position: relative;
+  }
+  .accountscreenrigtsection {
+    width: 100%;
+  }
+}
